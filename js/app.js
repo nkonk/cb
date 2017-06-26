@@ -97,7 +97,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
       <Route component={App}>
-        <Route path="/" component={HomePage} />
+        <Route path="/" component={LoginPage} />
         <Route onEnter={checkAuth}>
           <Route path="/login" component={LoginPage} />
           <Route path="/register" component={RegisterPage} />
